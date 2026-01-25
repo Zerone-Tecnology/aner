@@ -388,7 +388,7 @@ section {
         padding: 30px 20px;
         border: none;
 
-        b:first-of-type {
+        > b:first-of-type {
             margin-bottom: 15px;
             display: block;
         }
@@ -826,6 +826,7 @@ section {
         P {
             font-size: 24px;
         }
+
 
     }
 }
