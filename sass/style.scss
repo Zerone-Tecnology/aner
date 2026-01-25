@@ -27,6 +27,14 @@ html {
     font-size: 16px;
 }
 
+.h-font {
+    font-family: 'EuropeExtendedC';
+    font-weight: bold;
+}
+.fs-40 {
+    font-size: 40px;
+}
+
 .no-filter {
     filter: none !important;
 }
@@ -175,6 +183,10 @@ header {
         }
     }
 
+    &.gray {
+        background-color: #EFEFEF;
+    }
+
     &.black {
         color: white;
         background-color: black;
@@ -268,6 +280,10 @@ section {
             width: 137px;
             font-size: 16px;
 
+        }
+
+        &.empty {
+            height: 404px;
         }
 
     }
