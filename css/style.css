@@ -25,6 +25,11 @@ a {
   outline: none;
 }
 
+ol {
+  font-size: 24px;
+  padding-left: 40px;
+}
+
 .h-font {
   font-family: "EuropeExtendedC";
   font-weight: bold;
@@ -255,9 +260,11 @@ section .btn.dark-blue {
   background-color: #04011F;
   color: white;
   padding: 7.5px 24.5px;
+  transition: all 0.3s ease;
 }
 section .btn.dark-blue:hover {
-  background-color: #313038;
+  background-color: #EFEFEF;
+  color: black;
 }
 
 .cards {
@@ -459,6 +466,8 @@ section .btn.dark-blue:hover {
 
 .table-comparison {
   width: 100%;
+  table-layout: fixed;
+  width: 100%;
   border-collapse: separate;
   border-spacing: 5px;
 }
@@ -482,7 +491,6 @@ section .btn.dark-blue:hover {
 }
 .table-comparison.bigger {
   border-spacing: 10px;
-  margin: 0 -10px;
 }
 .table-comparison.bigger td {
   font-size: 20px;
@@ -734,8 +742,17 @@ section .btn.dark-blue:hover {
   }
 }
 @media (max-width: 766px) {
-  * {
-    overflow: auto;
+  #hero h1 {
+    font-size: 32px;
+  }
+  .table-comparison.bigger thead th {
+    padding: 10px 10px;
+  }
+  .card.gray b {
+    overflow: visible;
+  }
+  .card.gray small {
+    overflow: visible;
   }
   .offcanvas.offcanvas-end {
     margin: 0;
@@ -785,13 +802,19 @@ section .btn.dark-blue:hover {
   #page-404 P {
     font-size: 24px;
   }
+  table.table-comparison.bigger {
+    font-size: 20px;
+  }
+  table.table-comparison.bigger thead th {
+    font-size: 20px;
+  }
 }
 @media (max-width: 576px) {
-  * {
-    overflow: auto;
-  }
   ul {
     flex-wrap: wrap;
+  }
+  .fs-40 {
+    font-size: 24px;
   }
   #hero {
     border-bottom-left-radius: 46px;
