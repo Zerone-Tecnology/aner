@@ -349,11 +349,14 @@ section {
 
         &:hover {
             background-color: $dark-blue;
-            color: white
+            color: white;
+            hr {
+                background-color: white;
+            }
         }
 
         hr {
-            background-color: white
+            background-color: $dark-blue;
         }
     }
 
@@ -528,9 +531,19 @@ section {
         &.dark-blue {
             background-color: $dark-blue;
             color: white;
+            transition: all 0.5s ease;
 
             hr {
                 background-color: white;
+            }
+
+            &:hover {
+                background-color: $gray;
+                color: $dark-blue;
+
+                hr {
+                    background-color: $dark-blue;
+                }
             }
         }
     }

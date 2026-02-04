@@ -300,8 +300,11 @@ section .btn.dark-blue:hover {
   background-color: #04011F;
   color: white;
 }
-.cards .service-card.gray hr {
+.cards .service-card.gray:hover hr {
   background-color: white;
+}
+.cards .service-card.gray hr {
+  background-color: #04011F;
 }
 .cards .service-card.dark-blue {
   background-color: #04011F;
@@ -441,9 +444,17 @@ section .btn.dark-blue:hover {
 .cards_container .card.dark-blue {
   background-color: #04011F;
   color: white;
+  transition: all 0.5s ease;
 }
 .cards_container .card.dark-blue hr {
   background-color: white;
+}
+.cards_container .card.dark-blue:hover {
+  background-color: #D9D9D9;
+  color: #04011F;
+}
+.cards_container .card.dark-blue:hover hr {
+  background-color: #04011F;
 }
 
 .table-comparison {
