@@ -27,6 +27,11 @@ html {
     font-size: 16px;
 }
 
+
+a {
+  outline: none;
+}
+
 .h-font {
     font-family: 'EuropeExtendedC';
     font-weight: bold;
@@ -151,6 +156,15 @@ header {
 
     .logo {
         max-height: 38px;
+
+        &:hover {
+            cursor: pointer;
+            // max-height: 40px;
+            // margin-top: -2px;
+            // margin-right: -2px;
+            opacity: 0.8;
+            transition: all 0.3s ease;
+        }
     }
 }
 
@@ -281,6 +295,10 @@ section {
             background-color: $dark-blue;
             color: white;
             padding: 7.5px 24.5px;
+
+            &:hover {
+                background-color: #313038;
+            }
         }
     }
 }
@@ -322,10 +340,20 @@ section {
     .service-card.gray {
         background-color: $gray;
         color: black;
+        transition: all 0.5s ease;
 
         small {
             margin-top: auto;
             width: 90%;
+        }
+
+        &:hover {
+            background-color: $dark-blue;
+            color: white
+        }
+
+        hr {
+            background-color: white
         }
     }
 
@@ -351,11 +379,22 @@ section {
         object-fit: cover;
         z-index: -1;
         filter: brightness(0.63);
+        transition: all 0.5s ease;
+    }
+
+    .service-card:hover img{
+        filter: brightness(30%);
+        width: 120%;
+        height: 120%;
+        margin-left: -10%;
+        margin-right: -10%;
+        transition: all 0.5s ease;
+
     }
 }
 
 .rounded-card {
-    border-radius: 75px;
+    border-radius: 50px;
     background-color: $dark-blue;
     color: white;
     padding: 50px 0;
@@ -457,9 +496,19 @@ section {
 
         &.gray {
             background-color: $gray;
+            transition: all 0.5s ease;
 
             &.border-card {
                 border: 4px solid $dark-blue;
+            }
+
+            &:hover {
+                background-color: $dark-blue;
+                color: white;
+
+                hr {
+                    background-color: white;
+                }
             }
         }
 
@@ -726,6 +775,8 @@ section {
     .logo {
         max-width: 158px;
         margin-bottom: 30px;
+
+        
     }
 
     h1 {
@@ -910,6 +961,16 @@ section {
         flex-wrap: wrap;
     }
 
+    #hero {
+        border-bottom-left-radius: 46px;
+        border-bottom-right-radius: 46px;
+        padding-bottom: 40px;
+    }
+
+    .border-radius-73px {
+        border-radius: 46px;
+    }
+
     ul li {
         flex: 1 1 auto;
         margin-bottom: 8px;
@@ -921,6 +982,11 @@ section {
 
     section .section__header h2 {
         font-size: 24px;
+    }
+
+    .rounded-card {
+        border-radius: 40px;
+        padding: 30px 0;
     }
 
     .rounded-card h2 {
