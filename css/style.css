@@ -364,6 +364,13 @@ section .btn.dark-blue:hover {
 .rounded-card .btn b {
   font-size: 20px;
 }
+.rounded-card .card:hover {
+  background-color: white !important;
+  color: #04011F !important;
+}
+.rounded-card .card:hover hr {
+  background-color: #04011F !important;
+}
 
 .cards_container .row {
   margin: 0;

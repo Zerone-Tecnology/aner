@@ -429,6 +429,15 @@ section {
             font-size: 20px;
         }
     }
+
+    .card:hover {
+        background-color: white !important;
+        color: $dark-blue !important;
+
+        hr {
+            background-color: $dark-blue !important;
+        }
+    }
 }
 
 .cards_container {
