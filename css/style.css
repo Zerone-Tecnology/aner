@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @font-face {
   font-family: "EuropeExtendedC";
@@ -398,6 +399,20 @@ section .btn.dark-blue:hover {
 .cards_container .price-card hr {
   width: 100%;
 }
+.cards_container .price-card.gray:hover {
+  background-color: #D9D9D9 !important;
+  color: inherit !important;
+}
+.cards_container .price-card.gray:hover hr {
+  background-color: black !important;
+}
+.cards_container .price-card.dark-blue:hover {
+  background-color: #04011F !important;
+  color: white !important;
+}
+.cards_container .price-card.dark-blue:hover hr {
+  background-color: white !important;
+}
 .cards_container .price-card .price {
   font-weight: bold;
 }
@@ -442,6 +457,9 @@ section .btn.dark-blue:hover {
 }
 .cards_container .card.gray:hover hr {
   background-color: white;
+}
+.cards_container .card.gray:hover .dot-list li::before {
+  background-color: #ffffff;
 }
 .cards_container .card.white {
   background-color: white;
@@ -680,7 +698,46 @@ section .btn.dark-blue:hover {
   z-index: -1;
 }
 
+#popup {
+  position: fixed;
+  inset: 0; /* top:0 left:0 right:0 bottom:0 */
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.8); /* тёмный полупрозрачный фон */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#popup.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup-content {
+  padding: 50px 90px;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+  color: white;
+}
+.popup-content form input, .popup-content form select, .popup-content form textarea {
+  background-color: #D9D9D9;
+}
+
 @media only screen and (max-width: 1199px) {
+  #popup .popup-content .row .logo {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+  }
+  #popup .popup-content .row .logo img {
+    width: 100%;
+    margin-top: auto;
+  }
   #hero h1 {
     font-size: 48px;
   }
@@ -740,6 +797,16 @@ section .btn.dark-blue:hover {
   }
 }
 @media (max-width: 766px) {
+  #popup .popup-content {
+    padding: 30px 30px;
+  }
+  #popup .popup-content .socials img {
+    width: 40px;
+    height: 40px;
+  }
+  #popup .popup-content .row .logo {
+    margin-top: 20px;
+  }
   #hero h1 {
     font-size: 32px;
   }

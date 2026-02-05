@@ -28,6 +28,9 @@ html {
 }
 
 
+
+
+
 a {
   outline: none;
 }
@@ -74,6 +77,10 @@ h2 {
     font-size: 48px;
     font-family: "EuropeExtendedC", sans-serif;
 }
+
+
+
+
 
 .dot-list {
     padding-left: 20px;
@@ -472,6 +479,24 @@ section {
             width: 100%;
         }
 
+        &.gray:hover {
+            background-color: $gray !important;
+            color: inherit !important;
+
+            hr {
+                background-color: black !important;
+            }
+        }
+
+        &.dark-blue:hover {
+            background-color: $dark-blue !important;
+            color: white !important;
+
+            hr {
+                background-color: white !important;
+            }
+        }
+
         .price {
             font-weight: bold;
 
@@ -525,6 +550,10 @@ section {
 
                 hr {
                     background-color: white;
+                }
+
+                .dot-list li::before {
+                    background-color: #ffffff;
                 }
             }
         }
@@ -829,7 +858,68 @@ section {
     }
 }
 
+
+
+
+
+
+
+#popup {
+    position: fixed;
+    inset: 0; /* top:0 left:0 right:0 bottom:0 */
+    z-index: 9999;
+
+    background: rgba(0, 0, 0, 0.8); /* тёмный полупрозрачный фон */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#popup.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup-content {
+    padding: 50px 90px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    color: white;
+
+    form {
+        input, select, textarea {
+            background-color: $gray;
+        }
+
+        
+    }
+}
+
+
 @media only screen and (max-width: 1199px) {
+
+
+    #popup .popup-content{
+        .row {
+            .logo {
+                margin-top: auto;
+                display: flex;
+                justify-content: center;
+            }
+            .logo img{
+                width: 100%;
+                margin-top: auto;
+            }
+        }
+    }
+
     #hero {
         h1 {
             font-size: 48px;
@@ -911,6 +1001,21 @@ section {
 }
 
 @media (max-width: 766px) {
+
+    #popup .popup-content{
+        padding: 30px 30px;
+        
+        .socials {
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        .row .logo {
+            margin-top: 20px;
+        }
+    }
 
     #hero h1 {
         font-size: 32px;
