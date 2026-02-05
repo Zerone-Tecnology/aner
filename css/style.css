@@ -339,8 +339,6 @@ section .btn.dark-blue:hover {
   filter: brightness(30%);
   width: 120%;
   height: 120%;
-  margin-left: -10%;
-  margin-right: -10%;
   transition: all 0.5s ease;
 }
 
