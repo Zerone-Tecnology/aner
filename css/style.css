@@ -556,17 +556,18 @@ section .btn.dark-blue:hover {
 
 .top-footer {
   height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
-  color: white;
   padding: 48px 0;
 }
 .top-footer h2 {
-  font-size: 40px;
   font-family: "EuropeExtendedC", sans-serif;
   font-weight: bold;
 }
+.top-footer h2 span {
+  padding-right: 150px;
+}
 .top-footer p {
   font-size: 24px;
+  font-weight: 500;
 }
 .top-footer input {
   background-color: #D9D9D9;
@@ -578,7 +579,7 @@ section .btn.dark-blue:hover {
   color: white;
 }
 .top-footer img {
-  width: 80%;
+  width: 80px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -700,9 +701,11 @@ section .btn.dark-blue:hover {
 
 #popup {
   position: fixed;
-  inset: 0; /* top:0 left:0 right:0 bottom:0 */
+  inset: 0;
+  /* top:0 left:0 right:0 bottom:0 */
   z-index: 9999;
-  background: rgba(0, 0, 0, 0.8); /* тёмный полупрозрачный фон */
+  background: rgba(0, 0, 0, 0.8);
+  /* тёмный полупрозрачный фон */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -724,7 +727,9 @@ section .btn.dark-blue:hover {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
   color: white;
 }
-.popup-content form input, .popup-content form select, .popup-content form textarea {
+.popup-content form input,
+.popup-content form select,
+.popup-content form textarea {
   background-color: #D9D9D9;
 }
 
@@ -754,6 +759,14 @@ section .btn.dark-blue:hover {
   }
 }
 @media (max-width: 992px) {
+  .top-footer h2 span {
+    padding-right: 100px;
+  }
+  .top-footer img {
+    width: 50px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
   .count .number {
     align-self: start;
   }
@@ -797,6 +810,14 @@ section .btn.dark-blue:hover {
   }
 }
 @media (max-width: 766px) {
+  .top-footer h2 span {
+    padding-right: 50px;
+  }
+  .top-footer img {
+    width: 50px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
   #popup .popup-content {
     padding: 30px 30px;
   }
@@ -875,6 +896,9 @@ section .btn.dark-blue:hover {
   }
 }
 @media (max-width: 576px) {
+  .top-footer h2 span {
+    padding-right: 20px;
+  }
   ul {
     flex-wrap: wrap;
   }

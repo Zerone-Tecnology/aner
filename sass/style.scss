@@ -32,7 +32,7 @@ html {
 
 
 a {
-  outline: none;
+    outline: none;
 }
 
 ol {
@@ -182,7 +182,7 @@ header {
 
 .offcanvas {
     margin: 30px;
-    
+
     border-radius: 15px;
     bottom: auto;
     color: white;
@@ -364,6 +364,7 @@ section {
         &:hover {
             background-color: $dark-blue;
             color: white;
+
             hr {
                 background-color: white;
             }
@@ -399,7 +400,7 @@ section {
         transition: all 0.5s ease;
     }
 
-    .service-card:hover img{
+    .service-card:hover img {
         filter: brightness(30%);
         width: 120%;
         height: 120%;
@@ -587,7 +588,7 @@ section {
 .table-comparison {
     width: 100%;
     table-layout: fixed;
-    width: 100%;    
+    width: 100%;
     border-collapse: separate;
     border-spacing: 5px;
 
@@ -682,18 +683,22 @@ section {
 
 .top-footer {
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
-    color: white;
+    // background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
     padding: 48px 0;
 
     h2 {
-        font-size: 40px;
+        // font-size: 40px;
         font-family: 'EuropeExtendedC', sans-serif;
         font-weight: bold;
+
+        span {
+            padding-right: 150px;
+        }
     }
 
     p {
         font-size: 24px;
+        font-weight: 500;
     }
 
     input {
@@ -709,7 +714,7 @@ section {
     }
 
     img {
-        width: 80%;
+        width: 80px;
         object-fit: contain;
     }
 }
@@ -834,7 +839,7 @@ section {
         max-width: 158px;
         margin-bottom: 30px;
 
-        
+
     }
 
     h1 {
@@ -866,10 +871,12 @@ section {
 
 #popup {
     position: fixed;
-    inset: 0; /* top:0 left:0 right:0 bottom:0 */
+    inset: 0;
+    /* top:0 left:0 right:0 bottom:0 */
     z-index: 9999;
 
-    background: rgba(0, 0, 0, 0.8); /* тёмный полупрозрачный фон */
+    background: rgba(0, 0, 0, 0.8);
+    /* тёмный полупрозрачный фон */
 
     display: flex;
     align-items: center;
@@ -894,11 +901,14 @@ section {
     color: white;
 
     form {
-        input, select, textarea {
+
+        input,
+        select,
+        textarea {
             background-color: $gray;
         }
 
-        
+
     }
 }
 
@@ -906,14 +916,15 @@ section {
 @media only screen and (max-width: 1199px) {
 
 
-    #popup .popup-content{
+    #popup .popup-content {
         .row {
             .logo {
                 margin-top: auto;
                 display: flex;
                 justify-content: center;
             }
-            .logo img{
+
+            .logo img {
                 width: 100%;
                 margin-top: auto;
             }
@@ -944,6 +955,45 @@ section {
 }
 
 @media (max-width: 992px) {
+
+    .top-footer {
+        // height: 100%;
+        // // background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+        // padding: 48px 0;
+
+        h2 {
+            // font-size: 40px;
+            // font-family: 'EuropeExtendedC', sans-serif;
+            // font-weight: bold;
+
+            span {
+                padding-right: 100px;
+            }
+        }
+
+        // p {
+        //     font-size: 24px;
+        //     font-weight: 500;
+        // }
+
+        // input {
+        //     background-color: $gray;
+        // }
+
+        // small {
+        //     font-size: 16px;
+        // }
+
+        // a {
+        //     color: white;
+        // }
+
+        img {
+            width: 50px;
+            object-fit: contain;
+        }
+    }
+
     .count {
         .number {
             align-self: start;
@@ -1002,9 +1052,48 @@ section {
 
 @media (max-width: 766px) {
 
-    #popup .popup-content{
+
+    .top-footer {
+        // height: 100%;
+        // // background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+        // padding: 48px 0;
+
+        h2 {
+            // font-size: 40px;
+            // font-family: 'EuropeExtendedC', sans-serif;
+            // font-weight: bold;
+
+            span {
+                padding-right: 50px;
+            }
+        }
+
+        // p {
+        //     font-size: 24px;
+        //     font-weight: 500;
+        // }
+
+        // input {
+        //     background-color: $gray;
+        // }
+
+        // small {
+        //     font-size: 16px;
+        // }
+
+        // a {
+        //     color: white;
+        // }
+
+        img {
+            width: 50px;
+            object-fit: contain;
+        }
+    }
+
+    #popup .popup-content {
         padding: 30px 30px;
-        
+
         .socials {
             img {
                 width: 40px;
@@ -1029,6 +1118,7 @@ section {
         b {
             overflow: visible;
         }
+
         small {
             overflow: visible
         }
@@ -1100,8 +1190,9 @@ section {
     }
 
 
-    table.table-comparison.bigger{
+    table.table-comparison.bigger {
         font-size: 20px;
+
         thead {
             th {
                 font-size: 20px;
@@ -1111,6 +1202,41 @@ section {
 }
 
 @media (max-width: 576px) {
+
+    .top-footer {
+        // height: 100%;
+        // // background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+        // padding: 48px 0;
+
+        h2 {
+
+            span {
+                padding-right: 20px;
+            }
+        }
+
+        // p {
+        //     font-size: 24px;
+        //     font-weight: 500;
+        // }
+
+        // input {
+        //     background-color: $gray;
+        // }
+
+        // small {
+        //     font-size: 16px;
+        // }
+
+        // a {
+        //     color: white;
+        // }
+
+        // img {
+        //     width: 80px;
+        //     object-fit: contain;
+        // }
+    }
 
 
 
