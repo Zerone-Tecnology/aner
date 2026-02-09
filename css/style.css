@@ -274,6 +274,7 @@ header .logo:hover {
   color: #04011F;
   font-size: 28px;
   cursor: pointer;
+  padding: 0;
 }
 .sidebar-content .socials {
   display: flex;
