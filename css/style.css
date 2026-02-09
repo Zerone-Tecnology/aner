@@ -713,6 +713,7 @@ section .btn.dark-blue:hover {
 .bottom-footer a {
   color: white;
   text-decoration: none;
+  width: auto;
 }
 .bottom-footer a:hover {
   text-decoration: underline;
