@@ -205,7 +205,7 @@ header .logo:hover {
 #sidebar {
   position: fixed;
   inset: 0;
-  z-index: 9999;
+  z-index: 9998;
   padding-top: 30px;
   background: rgba(0, 0, 0, 0.6);
   visibility: hidden;
