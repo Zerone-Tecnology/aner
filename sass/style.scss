@@ -79,6 +79,13 @@ h2 {
 }
 
 
+.video-background video {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+
 
 
 
@@ -1079,7 +1086,7 @@ section {
 }
 
 .popup-content {
-    padding: 50px 90px;
+    padding: 60px 90px;
     height: auto;
     position: relative;
     overflow: hidden;

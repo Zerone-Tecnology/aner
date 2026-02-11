@@ -69,6 +69,13 @@ h2 {
   font-family: "EuropeExtendedC", sans-serif;
 }
 
+.video-background video {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
 .dot-list {
   padding-left: 20px;
   padding-top: 10px;
@@ -852,7 +859,7 @@ section .btn.dark-blue:hover {
 }
 
 .popup-content {
-  padding: 50px 90px;
+  padding: 60px 90px;
   height: auto;
   position: relative;
   overflow: hidden;
