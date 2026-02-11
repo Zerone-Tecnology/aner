@@ -701,9 +701,6 @@ section .btn.dark-blue:hover {
 .top-footer small {
   font-size: 16px;
 }
-.top-footer a {
-  color: white;
-}
 .top-footer img {
   width: 80px;
   -o-object-fit: contain;
