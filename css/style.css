@@ -388,6 +388,12 @@ section .btn.dark-blue:hover {
   color: black;
 }
 
+#legalTabs {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px 0px;
+}
+
 .cards {
   color: white;
 }

@@ -40,36 +40,123 @@
             <div class="container">
                 <h2 class="h2-line"><span>О легализации документов</span></h2>
 
-                <div>
-                    <button class="btn round dark-blue mb-2">
+                <div class="nav nav-tabs border-0" id="legalTabs" role="tablist">
+                    <button class="btn round dark-blue  active" id="freezone-tab" data-bs-toggle="tab"
+                        data-bs-target="#freezone" type="button" role="tab">
                         Free Zone & Offshore
                     </button>
-                    <button class="btn round dark-blue mb-2">
+
+                    <button class="btn round dark-blue " id="account-tab" data-bs-toggle="tab"
+                        data-bs-target="#account" type="button" role="tab">
                         Международный счёт
                     </button>
-                    <button class="btn round dark-blue mb-2">
+
+                    <button class="btn round dark-blue " id="residency-tab" data-bs-toggle="tab"
+                        data-bs-target="#residency" type="button" role="tab">
                         Резидентство
                     </button>
-                    <button class="btn round dark-blue mb-2">
+
+                    <button class="btn round dark-blue " id="tax-tab" data-bs-toggle="tab" data-bs-target="#tax"
+                        type="button" role="tab">
                         Налоги
                     </button>
-                    <button class="btn round dark-blue">
-                        Свободный вывод девидендов
+
+                    <button class="btn round dark-blue" id="dividends-tab" data-bs-toggle="tab"
+                        data-bs-target="#dividends" type="button" role="tab">
+                        Свободный вывод дивидендов
                     </button>
                 </div>
-                <div class="row cards g-4 mt-3 mb-4">
 
-                    <div class="col-12 col-xl-8 mb-xl-4">
-                        <div class="service-card gray empty">
+                <!-- КОНТЕНТ ТАБОВ -->
+                <div class="tab-content mt-3" id="legalTabsContent">
+
+                    <!-- TAB 1 -->
+                    <div class="tab-pane fade show active" id="freezone" role="tabpanel">
+                        <div class="row cards g-4 mb-4">
+                            <div class="col-12 col-xl-8">
+                                <div class="service-card gray empty p-4">
+                                    <h5>Free Zone & Offshore</h5>
+                                    <p>Контент для Free Zone и Offshore. Здесь информация о регистрации компаний и
+                                        преимуществах.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-4">
+                                <div class="service-card gray empty p-4">
+                                    Дополнительная информация для Free Zone.
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-xl-4 mb-xl-4">
-                        <div class="service-card gray empty">
+                    <!-- TAB 2 -->
+                    <div class="tab-pane fade" id="account" role="tabpanel">
+                        <div class="row cards g-4 mb-4">
+                            <div class="col-12 col-xl-8">
+                                <div class="service-card gray empty p-4">
+                                    <h5>Международный счёт</h5>
+                                    <p>Контент о международных банковских счетах и финансовых инструментах.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-4">
+                                <div class="service-card gray empty p-4">
+                                    Дополнительные детали по открытию счёта.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- TAB 3 -->
+                    <div class="tab-pane fade" id="residency" role="tabpanel">
+                        <div class="row cards g-4 mb-4">
+                            <div class="col-12 col-xl-8">
+                                <div class="service-card gray empty p-4">
+                                    <h5>Резидентство</h5>
+                                    <p>Контент о получении резидентской визы и условиях проживания.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-4">
+                                <div class="service-card gray empty p-4">
+                                    Сроки, документы и требования.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 4 -->
+                    <div class="tab-pane fade" id="tax" role="tabpanel">
+                        <div class="row cards g-4 mb-4">
+                            <div class="col-12 col-xl-8">
+                                <div class="service-card gray empty p-4">
+                                    <h5>Налоги</h5>
+                                    <p>Информация о налоговой системе ОАЭ и налоговых льготах.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-4">
+                                <div class="service-card gray empty p-4">
+                                    Налоговое планирование и оптимизация.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 5 -->
+                    <div class="tab-pane fade" id="dividends" role="tabpanel">
+                        <div class="row cards g-4 mb-4">
+                            <div class="col-12 col-xl-8">
+                                <div class="service-card gray empty p-4">
+                                    <h5>Свободный вывод дивидендов</h5>
+                                    <p>Контент о свободном распределении прибыли и финансовых операциях.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-4">
+                                <div class="service-card gray empty p-4">
+                                    Валютные переводы и ограничения.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
 
                 <h2>Доступные формы компаний в ОАЭ</h2>
                 <p>Мы предлагаем не только выгодные условия, но и гарантии для бизнеса</p>
@@ -115,7 +202,8 @@
                                     предоставляет
                                     доступ к международным расчётам и банковским инструментам, снижает уровень
                                     бюрократии и
-                                    позволяет иностранным предпринимателям быстро запустить деятельность в ОАЭ, сохраняя
+                                    позволяет иностранным предпринимателям быстро запустить деятельность в ОАЭ,
+                                    сохраняя
                                     полный контроль над компанией.
                                 </small>
 
@@ -136,7 +224,8 @@
                                     Оптимальное решение для международных расчётов, создания
                                     холдинговых структур и защиты активов. Offshore-компания не предназначена для
                                     ведения
-                                    деятельности на внутреннем рынке ОАЭ, однако эффективно используется для оптимизации
+                                    деятельности на внутреннем рынке ОАЭ, однако эффективно используется для
+                                    оптимизации
                                     корпоративных и финансовых потоков, работы с зарубежными партнёрами и
                                     конфиденциального
                                     владения активами. Такой формат выбирают инвесторы и холдинги, для которых важны
