@@ -155,7 +155,6 @@ header {
 }
 header .logo {
   max-height: 38px;
-  width: 160px;
 }
 header .logo:hover {
   cursor: pointer;
@@ -179,7 +178,6 @@ header .logo:hover {
 }
 .header-fixed .logo {
   height: 40px;
-  width: 160px;
 }
 .header-fixed .socials {
   gap: 5px;
@@ -303,7 +301,7 @@ header .logo:hover {
 }
 
 .border-radius-73px {
-  border-radius: 73px;
+  border-radius: 50px;
 }
 
 .btn.round {
@@ -794,6 +792,7 @@ section .btn.dark-blue:hover {
 }
 .count .arrow-container.right-container {
   padding-right: 50px;
+  margin-left: auto;
 }
 .count .arrow-container .arrow {
   height: 50%;
@@ -819,6 +818,9 @@ section .btn.dark-blue:hover {
   justify-content: center;
   flex-wrap: wrap;
   align-self: center;
+}
+.count .number-left {
+  margin-left: auto;
 }
 
 #page-404 {

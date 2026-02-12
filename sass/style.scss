@@ -29,6 +29,9 @@ html {
 
 
 
+// * {outline: red;
+// border: 1px solid red}
+
 
 
 a {
@@ -382,7 +385,7 @@ header {
 
 
 .border-radius-73px {
-    border-radius: 73px;
+    border-radius: 50px;
 }
 
 .btn {
@@ -1002,6 +1005,7 @@ section {
 
         &.right-container {
             padding-right: 50px;
+            margin-left: auto;
         }
 
         .arrow {
@@ -1019,6 +1023,7 @@ section {
         }
     }
 
+
     .number {
         font-size: 48px;
         font-weight: bold;
@@ -1032,6 +1037,10 @@ section {
         justify-content: center;
         flex-wrap: wrap;
         align-self: center;
+    }
+
+    .number-left {
+        margin-left: auto;
     }
 
 }
