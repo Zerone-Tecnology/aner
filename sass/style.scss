@@ -663,6 +663,7 @@ section {
             background-color: $gray !important;
             color: inherit !important;
 
+
             hr {
                 background-color: black !important;
             }
@@ -761,6 +762,10 @@ section {
             }
         }
     }
+}
+
+.rounded-card .cards_container .card.gray:hover .dot-list li::before {
+    background-color: #000000;
 }
 
 
