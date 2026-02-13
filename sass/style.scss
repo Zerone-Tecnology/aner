@@ -302,6 +302,7 @@ header {
         align-items: center;
         margin-bottom: 20px;
         flex-direction: column;
+
     }
 
     a {
@@ -310,6 +311,9 @@ header {
 
         &:hover {
             text-decoration: underline;
+        }
+        &.btn:hover {
+            text-decoration: none;
         }
     }
 
@@ -1558,6 +1562,7 @@ section {
 
     .table-comparison {
         border-spacing: 3px;
+
         thead th {
             font-size: 5px;
             padding: 4px 5px;

@@ -255,6 +255,9 @@ header .logo:hover {
 .sidebar-content a:hover {
   text-decoration: underline;
 }
+.sidebar-content a.btn:hover {
+  text-decoration: none;
+}
 .sidebar-content .list-unstyled {
   font-size: 14px;
   padding: 0;
