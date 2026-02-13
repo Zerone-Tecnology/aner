@@ -359,7 +359,7 @@ header .logo:hover {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -1;
-  filter: brightness(0.63);
+  filter: brightness(0.5);
 }
 #hero h1 {
   font-size: 75px;
