@@ -1140,13 +1140,19 @@ section {
         background: none;
         color: white;
         font-size: 40px;
-        
+
     }
 }
 
 
 @media only screen and (max-width: 1199px) {
 
+
+    .table-comparison {
+        thead th {
+            font-size: 14px;
+        }
+    }
 
     .bottom-footer {
 
@@ -1214,6 +1220,17 @@ section {
 }
 
 @media (max-width: 992px) {
+
+
+    .table-comparison {
+        thead th {
+            font-size: 10px;
+        }
+
+        td {
+            font-size: 12px;
+        }
+    }
 
     .top-footer {
         // height: 100%;
@@ -1310,6 +1327,16 @@ section {
 }
 
 @media (max-width: 766px) {
+
+    .table-comparison {
+        thead th {
+            font-size: 7px;
+        }
+
+        td {
+            font-size: 8px;
+        }
+    }
 
 
     #sidebar {
@@ -1523,6 +1550,23 @@ section {
 }
 
 @media (max-width: 576px) {
+
+
+    .table-comparison {
+        border-spacing: 3px;
+        thead th {
+            font-size: 5px;
+            padding: 4px 5px;
+            border-radius: 4px;
+        }
+
+        td {
+            font-size: 5px;
+            padding: 4px 5px;
+            border-radius: 4px;
+        }
+    }
+
 
     .header-fixed {
         padding-left: 10px;

@@ -902,6 +902,9 @@ section .btn.dark-blue:hover {
 }
 
 @media only screen and (max-width: 1199px) {
+  .table-comparison thead th {
+    font-size: 14px;
+  }
   .bottom-footer {
     font-size: 24px;
   }
@@ -947,6 +950,12 @@ section .btn.dark-blue:hover {
   }
 }
 @media (max-width: 992px) {
+  .table-comparison thead th {
+    font-size: 10px;
+  }
+  .table-comparison td {
+    font-size: 12px;
+  }
   .top-footer h2 span {
     padding-right: 100px;
   }
@@ -998,6 +1007,12 @@ section .btn.dark-blue:hover {
   }
 }
 @media (max-width: 766px) {
+  .table-comparison thead th {
+    font-size: 7px;
+  }
+  .table-comparison td {
+    font-size: 8px;
+  }
   #sidebar {
     padding: 0;
   }
@@ -1146,6 +1161,19 @@ section .btn.dark-blue:hover {
   }
 }
 @media (max-width: 576px) {
+  .table-comparison {
+    border-spacing: 3px;
+  }
+  .table-comparison thead th {
+    font-size: 5px;
+    padding: 4px 5px;
+    border-radius: 4px;
+  }
+  .table-comparison td {
+    font-size: 5px;
+    padding: 4px 5px;
+    border-radius: 4px;
+  }
   .header-fixed {
     padding-left: 10px;
     padding-right: 10px;

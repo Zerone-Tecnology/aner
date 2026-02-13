@@ -307,110 +307,119 @@
                 <a href="#" class="btn round dark-blue mt-3">Узнать точную стоимость</a>
             </div>
         </section>
+
         <section class="rounded-card">
             <div class="container">
                 <h2>Разница в налогообложении</h2>
                 <p class="mb-4">Сравните показатели и условия в разных странах самостоятельно и убедитесь сами</p>
-                <a href="#" class="btn round white"><b>Открыть таблицу</b></a>
+                <a class="btn round white" data-bs-toggle="collapse" href="#taxTable" role="button"
+                    aria-expanded="false" aria-controls="taxTable">
+                    <b>Открыть таблицу</b>
+                </a>
+
             </div>
         </section>
-        <section class="container d-none d-xl-block ">
-            <table class="table-comparison mb-0">
-                <thead>
-                    <tr>
-                        <th>Показатель</th>
-                        <th>ОАЭ, %</th>
-                        <th>Россия, %</th>
-                        <th>Казахстан, %</th>
-                        <th>Узбекистан, %</th>
-                        <th>Беларусь, %</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Налог на прибыль (Corporate Tax)</td>
-                        <td>9 для всех, за исключением некоторых видов деятельности, но не больше количество лиц, чем на
-                            практике получается еще меньше.</td>
-                        <td>25</td>
-                        <td>20</td>
-                        <td>15</td>
-                        <td>18-20</td>
-                    </tr>
-                    <tr>
-                        <td>Налог на дивиденды</td>
-                        <td>0 (для нерезидентов и резидентов)</td>
-                        <td>13 (резиденты) / 15 (нерезиденты)</td>
-                        <td>15</td>
-                        <td>10</td>
-                        <td>12</td>
-                    </tr>
-                    <tr>
-                        <td>НДС / VAT</td>
-                        <td>5, в некоторых зонах 0%</td>
-                        <td>20</td>
-                        <td>12</td>
-                        <td>12</td>
-                        <td>20</td>
-                    </tr>
-                    <tr>
-                        <td>Налог на зарплату / взносы / пенсию / социальные взносы</td>
-                        <td>0&nbsp;(только фикс. сбор работодателя за визу резидента)</td>
-                        <td>~30 совокупно</td>
-                        <td>~10</td>
-                        <td>~12</td>
-                        <td>~35</td>
-                    </tr>
-                    <tr>
-                        <td>Налог на имущество компании</td>
-                        <td>0</td>
-                        <td>2,2</td>
-                        <td>1,5</td>
-                        <td>1,5</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Налог на экспорт / репатриацию прибыли</td>
-                        <td>Отсутствует</td>
-                        <td>0-15 (в зависимости от страны-получателя)</td>
-                        <td>5-15</td>
-                        <td>10</td>
-                        <td>18</td>
-                    </tr>
-                    <tr>
-                        <td>Валютный контроль</td>
-                        <td>Отсутствует — свободный вывод капитала</td>
-                        <td>Строгий контроль</td>
-                        <td>Умеренный контроль</td>
-                        <td>Строгий</td>
-                        <td>Средний</td>
-                    </tr>
-                    <tr>
-                        <td>Владение иностранцами</td>
-                        <td>100 разрешено в Free Zone</td>
-                        <td>Ограничения в стратегических секторах</td>
-                        <td>Разрешено</td>
-                        <td>Разрешено</td>
-                        <td>С ограничениями</td>
-                    </tr>
-                    <tr>
-                        <td>Срочное время регистрации компании</td>
-                        <td>от 1 дня</td>
-                        <td>30-40 дней</td>
-                        <td>20-30 дней</td>
-                        <td>20-25 дней</td>
-                        <td>30+ дней</td>
-                    </tr>
-                    <tr>
-                        <td>Привлекательность для международного бизнеса</td>
-                        <td><span class="stars">⭐⭐⭐⭐⭐</span> (максимум)</td>
-                        <td><span class="stars">⭐⭐</span></td>
-                        <td><span class="stars">⭐⭐⭐</span></td>
-                        <td><span class="stars">⭐⭐</span></td>
-                        <td><span class="stars">⭐⭐</span></td>
-                    </tr>
-                </tbody>
-            </table>
+        <section class="container">
+            <div class="collapse mt-4" id="taxTable">
+                <table class="table-comparison mb-0">
+                    <thead>
+                        <tr>
+                            <th>Показатель</th>
+                            <th>ОАЭ, %</th>
+                            <th>Россия, %</th>
+                            <th>Казахстан, %</th>
+                            <th>Узбекистан, %</th>
+                            <th>Беларусь, %</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Налог на прибыль (Corporate Tax)</td>
+                            <td>9 для всех, за исключением некоторых видов деятельности, но не больше количество лиц,
+                                чем на
+                                практике получается еще меньше.</td>
+                            <td>25</td>
+                            <td>20</td>
+                            <td>15</td>
+                            <td>18-20</td>
+                        </tr>
+                        <tr>
+                            <td>Налог на дивиденды</td>
+                            <td>0 (для нерезидентов и резидентов)</td>
+                            <td>13 (резиденты) / 15 (нерезиденты)</td>
+                            <td>15</td>
+                            <td>10</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>НДС / VAT</td>
+                            <td>5, в некоторых зонах 0%</td>
+                            <td>20</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>Налог на зарплату / взносы / пенсию / социальные взносы</td>
+                            <td>0&nbsp;(только фикс. сбор работодателя за визу резидента)</td>
+                            <td>~30 совокупно</td>
+                            <td>~10</td>
+                            <td>~12</td>
+                            <td>~35</td>
+                        </tr>
+                        <tr>
+                            <td>Налог на имущество компании</td>
+                            <td>0</td>
+                            <td>2,2</td>
+                            <td>1,5</td>
+                            <td>1,5</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Налог на экспорт / репатриацию прибыли</td>
+                            <td>Отсутствует</td>
+                            <td>0-15 (в зависимости от страны-получателя)</td>
+                            <td>5-15</td>
+                            <td>10</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>Валютный контроль</td>
+                            <td>Отсутствует — свободный вывод капитала</td>
+                            <td>Строгий контроль</td>
+                            <td>Умеренный контроль</td>
+                            <td>Строгий</td>
+                            <td>Средний</td>
+                        </tr>
+                        <tr>
+                            <td>Владение иностранцами</td>
+                            <td>100 разрешено в Free Zone</td>
+                            <td>Ограничения в стратегических секторах</td>
+                            <td>Разрешено</td>
+                            <td>Разрешено</td>
+                            <td>С ограничениями</td>
+                        </tr>
+                        <tr>
+                            <td>Срочное время регистрации компании</td>
+                            <td>от 1 дня</td>
+                            <td>30-40 дней</td>
+                            <td>20-30 дней</td>
+                            <td>20-25 дней</td>
+                            <td>30+ дней</td>
+                        </tr>
+                        <tr>
+                            <td>Привлекательность для международного бизнеса</td>
+                            <td><span class="stars">⭐⭐⭐⭐⭐</span> (максимум)</td>
+                            <td><span class="stars">⭐⭐</span></td>
+                            <td><span class="stars">⭐⭐⭐</span></td>
+                            <td><span class="stars">⭐⭐</span></td>
+                            <td><span class="stars">⭐⭐</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
+
 
         <section class="container faq mb-5 pb-4">
             <h2 class="h2-line"><span>Ответы на вопросы</span></h2>
@@ -642,9 +651,9 @@
                     <div class="col-12 col-md-3 col-xl-4 d-flex flex-column d-xl-block">
                         <div class="row mb-4 mb-md-0"><img src="img/logo.png" alt="#"></div>
                         <div class="row socials d-none d-md-flex">
-                        <a href=""><img src="img/telegram_logo_icon_144811 1.png" alt=""></a>
-                        <a href=""><img src="img/whatsapp-black_100119 1.png" alt=""></a>
-                        <a href=""><img src="img/instagram_black_logo_icon_147122 1.png" alt=""></a>
+                            <a href=""><img src="img/telegram_logo_icon_144811 1.png" alt=""></a>
+                            <a href=""><img src="img/whatsapp-black_100119 1.png" alt=""></a>
+                            <a href=""><img src="img/instagram_black_logo_icon_147122 1.png" alt=""></a>
                         </div>
                     </div>
                     <div class="col">
@@ -678,7 +687,7 @@
         </div>
 
 
-        
+
     </footer>
 
 
