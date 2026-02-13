@@ -28,6 +28,9 @@ html {
 }
 
 
+a:focus {
+    outline: none !important;
+}
 
 // * {outline: red;
 // border: 1px solid red}
