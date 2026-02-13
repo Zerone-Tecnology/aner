@@ -806,6 +806,7 @@ section .btn.dark-blue:hover {
   border-left: 2px dashed rgb(255, 255, 255);
 }
 .count .number {
+  font-family: "EuropeExtendedC", sans-serif;
   font-size: 48px;
   font-weight: bold;
   border: 3px solid white;
