@@ -400,6 +400,11 @@ section .btn.dark-blue:hover {
   justify-content: space-between;
   gap: 10px 0px;
 }
+#legalTabs .dark-blue.active {
+  color: black;
+  background-color: #EFEFEF;
+  cursor: default;
+}
 
 .cards {
   color: white;

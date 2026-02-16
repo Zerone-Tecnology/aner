@@ -312,6 +312,7 @@ header {
         &:hover {
             text-decoration: underline;
         }
+
         &.btn:hover {
             text-decoration: none;
         }
@@ -504,6 +505,13 @@ section {
     display: flex;
     justify-content: space-between;
     gap: 10px 0px;
+
+    .dark-blue.active {
+        color: black;
+
+        background-color: #EFEFEF;
+        cursor: default;
+    }
 }
 
 .cards {
