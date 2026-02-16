@@ -935,7 +935,8 @@ section {
         letter-spacing: normal;
     }
 
-    .small {
+
+    .small-li ul li:not(:first-child) {
         font-size: 16px;
         font-weight: bold;
         letter-spacing: 3px;

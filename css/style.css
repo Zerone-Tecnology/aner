@@ -738,7 +738,7 @@ section .btn.dark-blue:hover {
   font-size: 32px;
   letter-spacing: normal;
 }
-.bottom-footer .small {
+.bottom-footer .small-li ul li:not(:first-child) {
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 3px;
