@@ -188,9 +188,22 @@ header .logo:hover {
   margin-right: 30px;
   display: flex;
 }
-.header-fixed .socials img {
+.header-fixed .socials a:nth-of-type(1):hover svg path {
+  fill: #2f8eec;
+}
+.header-fixed .socials a:nth-of-type(2):hover svg path {
+  fill: #1ab21e;
+}
+.header-fixed .socials a:nth-of-type(3):hover svg path {
+  fill: #ea4754;
+}
+.header-fixed .socials svg {
   height: 30px;
   width: auto;
+  transition: all 0.3s;
+}
+.header-fixed .socials svg path {
+  transition: all 0.3s;
 }
 .header-fixed .socials a {
   display: block;

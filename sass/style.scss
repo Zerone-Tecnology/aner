@@ -218,10 +218,32 @@ header {
         margin-right: 30px;
         display: flex;
 
-        img {
+
+        a:nth-of-type(1):hover svg path {
+            fill: #2f8eec;
+        }
+
+        a:nth-of-type(2):hover svg path {
+            fill: #1ab21e;
+        }
+
+        a:nth-of-type(3):hover svg path {
+            fill: #ea4754;
+        }
+
+
+
+        svg {
             height: 30px;
             width: auto;
+            transition: all 0.3s;
+
+            path {
+                transition: all 0.3s;
+            }
         }
+
+
 
         a {
             display: block;
