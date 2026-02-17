@@ -93,6 +93,35 @@ h2 {
 
 
 
+.socials {
+
+
+    a:nth-of-type(1):hover svg path {
+        fill: #2f8eec;
+    }
+
+    a:nth-of-type(2):hover svg path {
+        fill: #1ab21e;
+    }
+
+    a:nth-of-type(3):hover svg path {
+        fill: #ea4754;
+    }
+
+
+
+    svg {
+        height: 30px;
+        width: auto;
+        transition: all 0.3s;
+
+        path {
+            transition: all 0.3s;
+        }
+    }
+
+
+}
 
 
 .dot-list {
@@ -1144,6 +1173,13 @@ section {
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s ease;
+
+    .socials {
+        svg {
+            width: 100px;
+            height: 100px;
+        }
+    }
 }
 
 #popup.active {
@@ -1229,7 +1265,7 @@ section {
             }
 
             .logo img {
-                width: 100%;
+                width: 80%;
                 margin-top: auto;
             }
         }
@@ -1482,7 +1518,7 @@ section {
         padding: 30px 30px;
 
         .socials {
-            img {
+            svg {
                 width: 40px;
                 height: 40px;
             }
@@ -1589,6 +1625,16 @@ section {
 }
 
 @media (max-width: 576px) {
+
+
+    #popup .popup-content {
+        .row {
+
+            .logo img {
+                width: 100%;
+            }
+        }
+    }
 
 
     .table-comparison {
