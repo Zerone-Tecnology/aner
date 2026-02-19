@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <ul class="container d-flex justify-content-between align-items-center ">
+            <li>
+                <a href="#">
+                    <img src="img/logo.png" alt="#" class="logo">
+                </a>
+            </li>
+            <li class="d-flex justify-content-end openSidebar">
+                <svg width="33" height="22" viewBox="0 0 33 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0H33V3.66667H0V0ZM0 9.16667H33V12.8333H0V9.16667ZM0 18.3333H33V22H0V18.3333Z"
+                        fill="white" />
+                </svg>
+            </li>
+        </ul>
+    </header>
+
+    <div class="header-fixed">
+        <ul class="container d-flex justify-content-between align-items-center ">
+            <li>
+                <a href="#">
+                    <img src="img/logo.png" alt="#" class="logo">
+                </a>
+            </li>
+            <li class="d-flex justify-content-end">
+                <!-- <class class="socials">
+                    <a href="">
+                        <img src="img/telegram_logo_icon_144811 1.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/whatsapp-black_100119 1.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/instagram_black_logo_icon_147122 1.png" alt="">
+                    </a>
+                </class> -->
+                <div class="socials">
+                    <a href="#">
+                        <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_218_47226)">
+                                <path
+                                    d="M13.5 0.40625C6.27497 0.40625 0.421875 6.04338 0.421875 13C0.421875 19.9566 6.27581 25.5938 13.5 25.5938C20.725 25.5938 26.5781 19.9566 26.5781 13C26.5781 6.04338 20.7242 0.40625 13.5 0.40625ZM19.9235 9.03419L17.777 18.7744C17.6183 19.4651 17.1914 19.6324 16.5957 19.3074L13.3262 16.9869L11.7492 18.4494C11.5754 18.6168 11.4277 18.759 11.0903 18.759L11.3223 15.5545L17.3813 10.283C17.6453 10.0596 17.323 9.93281 16.9746 10.1562L9.48628 14.6957L6.25894 13.7256C5.55778 13.5127 5.54175 13.0504 6.40659 12.7254L19.0156 8.04294C19.6012 7.83981 20.1125 8.18025 19.9226 9.03337L19.9235 9.03419Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_218_47226">
+                                    <rect width="27" height="26" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+
+
+                    </a>
+                    <a href="">
+                        <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_218_47228)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M13.4961 0C6.05377 0 0 5.83119 0 12.9999C0 15.8429 0.952111 18.4795 2.57063 20.6196L0.888519 25.4496L6.0775 23.8526C8.21171 25.213 10.7586 26 13.5039 26C20.9462 26 27 20.1686 27 13.0001C27 5.83142 20.9462 0.000214895 13.5039 0.000214895L13.4961 0ZM9.72723 6.60336C9.46546 5.99965 9.26707 5.97679 8.8705 5.96126C8.73547 5.95371 8.58499 5.94617 8.41817 5.94617C7.90225 5.94617 7.36282 6.09133 7.03746 6.41227C6.6409 6.80203 5.65696 7.71137 5.65696 9.57623C5.65696 11.4411 7.06926 13.2447 7.25959 13.4971C7.45799 13.749 10.0129 17.6314 13.98 19.2137C17.0822 20.4518 18.0028 20.337 18.7088 20.1919C19.7402 19.9779 21.0336 19.2439 21.3589 18.3577C21.6843 17.4709 21.6843 16.7143 21.5889 16.5538C21.4937 16.3934 21.2317 16.3019 20.8352 16.1106C20.4386 15.9195 18.5104 15.0024 18.1454 14.8801C17.7882 14.7502 17.4472 14.7962 17.1776 15.163C16.7967 15.6751 16.4239 16.1949 16.1223 16.5081C15.8842 16.7527 15.4953 16.7833 15.1701 16.6533C14.7337 16.4777 13.512 16.0646 12.0043 14.7731C10.8379 13.7721 10.0445 12.5264 9.81457 12.152C9.58437 11.77 9.79081 11.5481 9.97308 11.3419C10.1715 11.1048 10.3618 10.9368 10.5602 10.7151C10.7586 10.4936 10.8697 10.3788 10.9967 10.1189C11.1317 9.86677 11.0363 9.60686 10.9411 9.41576C10.8459 9.22466 10.0526 7.35979 9.72723 6.60336Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_218_47228">
+                                    <rect width="27" height="26" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                    </a>
+                    <a href="">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_218_47232)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 13C0 5.82032 5.82032 0 13 0C20.1797 0 26 5.82032 26 13C26 20.1797 20.1797 26 13 26C5.82032 26 0 20.1797 0 13ZM13.0007 6.06667C11.1177 6.06667 10.8813 6.0749 10.1418 6.10854C9.40366 6.14234 8.89985 6.25923 8.45899 6.43067C8.00296 6.60774 7.61616 6.84466 7.23076 7.23017C6.8451 7.61556 6.60817 8.00237 6.4305 8.45823C6.25863 8.89926 6.14163 9.40323 6.10843 10.141C6.07533 10.8806 6.06667 11.1171 6.06667 13.0001C6.06667 14.883 6.07506 15.1187 6.10854 15.8582C6.1425 16.5963 6.25934 17.1001 6.43067 17.541C6.6079 17.997 6.84477 18.3838 7.23033 18.7692C7.61556 19.1549 8.00237 19.3924 8.45813 19.5695C8.89926 19.7409 9.40323 19.8578 10.1412 19.8916C10.8808 19.9253 11.117 19.9335 12.9998 19.9335C14.8829 19.9335 15.1185 19.9253 15.8581 19.8916C16.5962 19.8578 17.1006 19.7409 17.5418 19.5695C17.9976 19.3924 18.3838 19.1549 18.7691 18.7692C19.1547 18.3838 19.3917 17.997 19.5693 17.5412C19.7398 17.1001 19.8568 16.5962 19.8915 15.8584C19.9247 15.1188 19.9333 14.883 19.9333 13.0001C19.9333 11.1171 19.9247 10.8808 19.8915 10.1412C19.8568 9.40306 19.7398 8.89926 19.5693 8.4584C19.3917 8.00237 19.1547 7.61556 18.7691 7.23017C18.3834 6.8445 17.9977 6.60763 17.5413 6.43067C17.0993 6.25923 16.5952 6.14234 15.8571 6.10854C15.1175 6.0749 14.8821 6.06667 12.9985 6.06667H13.0007Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.3788 7.31619C12.5634 7.31592 12.7694 7.31619 13.0008 7.31619C14.852 7.31619 15.0714 7.32285 15.8025 7.35605C16.4785 7.38698 16.8454 7.49992 17.0898 7.59482C17.4133 7.72049 17.644 7.87069 17.8865 8.11336C18.1292 8.35602 18.2795 8.58715 18.4054 8.91075C18.5003 9.15482 18.6134 9.52174 18.6442 10.1977C18.6774 10.9286 18.6846 11.1482 18.6846 12.9985C18.6846 14.8489 18.6774 15.0685 18.6442 15.7993C18.6132 16.4753 18.5003 16.8423 18.4054 17.0863C18.2797 17.4099 18.1292 17.6403 17.8865 17.8829C17.6439 18.1255 17.4135 18.2757 17.0898 18.4014C16.8457 18.4967 16.4785 18.6094 15.8025 18.6403C15.0716 18.6735 14.852 18.6807 13.0008 18.6807C11.1495 18.6807 10.93 18.6735 10.1992 18.6403C9.52316 18.6091 9.15623 18.4961 8.91172 18.4012C8.58813 18.2756 8.357 18.1254 8.11434 17.8827C7.87167 17.64 7.72147 17.4095 7.59553 17.0858C7.50063 16.8417 7.38753 16.4748 7.35676 15.7988C7.3235 15.0679 7.31689 14.8483 7.31689 12.9968C7.31689 11.1453 7.3235 10.9269 7.35676 10.196C7.38764 9.52001 7.50063 9.15309 7.59553 8.90869C7.72119 8.58515 7.87167 8.35402 8.11434 8.11135C8.357 7.86869 8.58813 7.71848 8.91172 7.59249C9.15612 7.49716 9.52316 7.38449 10.1992 7.35345C10.8388 7.32458 11.0866 7.31592 12.3788 7.31445V7.31619ZM16.7018 8.46739C16.2425 8.46739 15.8698 8.83968 15.8698 9.29912C15.8698 9.75845 16.2425 10.1311 16.7018 10.1311C17.1611 10.1311 17.5338 9.75845 17.5338 9.29912C17.5338 8.83979 17.1611 8.46739 16.7018 8.46739ZM13.0008 9.43952C11.0345 9.43952 9.44023 11.0338 9.44023 13.0001C9.44023 14.9665 11.0345 16.56 13.0008 16.56C14.9672 16.56 16.5608 14.9665 16.5608 13.0001C16.5608 11.0338 14.9672 9.43952 13.0008 9.43952Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M13.0006 10.6885C14.2769 10.6885 15.3117 11.7232 15.3117 12.9996C15.3117 14.2759 14.2769 15.3107 13.0006 15.3107C11.7241 15.3107 10.6895 14.2759 10.6895 12.9996C10.6895 11.7232 11.7241 10.6885 13.0006 10.6885Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_218_47232">
+                                    <rect width="26" height="26" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+
+
+
+
+                    </a>
+                </div>
+                <div class="d-flex justify-content-end openSidebar align-items-center">
+                    <svg width="33" height="22" viewBox="0 0 33 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H33V3.66667H0V0ZM0 9.16667H33V12.8333H0V9.16667ZM0 18.3333H33V22H0V18.3333Z"
+                            fill="white" />
+                    </svg>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <img src="img/ekskursii-v-burdzh-halifa-1.png" alt="#">
+                <h1>Открытие бизнеса в ОАЭ</h1>
+                <h2 class="mb-5">Под ключ за 7 дней</h2>
+                <a class="btn round green openPopup">Получить консультацию</a>
+            </div>
+        </section>
+
+
+        <section class="container faq mb-5 pb-4">
+            <h2 class="h2-line"><span>Выгоды ведения бизнеса в ОАЭ</span></h2>
+            <p>Частые вопросы по открытию бизнеса в ОАЭ</p>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse1">
+                            <div class="w-100">Могут ли граждане Российской Федерации открыть компанию в Дубае?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Граждане России свободно открывают компании в ОАЭ и не сталкиваются с ограничениями — если
+                            все документы подготовлены правильно и легализованы, процесс стандартен и прозрачен. В Aner
+                            Consulting специалисты возьмут на себя весь комплекс обязательств: подготовку, подачу и
+                            сопровождение на всех этапах, чтобы исключить любые сложности и обеспечить быстрое получение
+                            лицензии и запуск бизнеса.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse2">
+                            <div class="w-100">Что такое mainland компания в Дубае?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse3">
+                            <div class="w-100">Что такое Free zone компания в Дубае?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse4">
+                            <div class="w-100">Что такое Offshore компания в Дубае?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse5">
+                            <div class="w-100">Необходим ли физический офис для компании в Дубае?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse6">
+                            <div class="w-100">Можно ли открыть компанию в 100% иностранном владении?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse7">
+                            <div class="w-100">Что такое mainland компания в Дубае?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse8">
+                            <div class="w-100">Что такое Free zone компания в Дубае?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse9">
+                            <div class="w-100">Что такое Offshore компания в Дубае?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse10">
+                            <div class="w-100">Необходим ли физический офис для компании в Дубае?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse11">
+                            <div class="w-100">Можно ли открыть компанию в 100% иностранном владении?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse11" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse12">
+                            <div class="w-100">Что такое mainland компания в Дубае?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse12" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse13">
+                            <div class="w-100">Что такое Free zone компания в Дубае?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse13" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse14">
+                            <div class="w-100">Что такое Offshore компания в Дубае?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse14" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse15">
+                            <div class="w-100">Необходим ли физический офис для компании в Дубае?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse15" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse16">
+                            <div class="w-100">Можно ли открыть компанию в 100% иностранном владении?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse16" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container faq mb-5 pb-4">
+            <h2 class="h2-line"><span>Выгоды ведения бизнеса в ОАЭ</span></h2>
+            <p>Частые вопросы по открытию бизнеса в ОАЭ</p>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse1">
+                            <div class="w-100">Могут ли граждане Российской Федерации открыть компанию в Дубае?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Граждане России свободно открывают компании в ОАЭ и не сталкиваются с ограничениями — если
+                            все документы подготовлены правильно и легализованы, процесс стандартен и прозрачен. В Aner
+                            Consulting специалисты возьмут на себя весь комплекс обязательств: подготовку, подачу и
+                            сопровождение на всех этапах, чтобы исключить любые сложности и обеспечить быстрое получение
+                            лицензии и запуск бизнеса.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse2">
+                            <div class="w-100">Что такое mainland компания в Дубае?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse3">
+                            <div class="w-100">Что такое Free zone компания в Дубае?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse4">
+                            <div class="w-100">Что такое Offshore компания в Дубае?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse5">
+                            <div class="w-100">Необходим ли физический офис для компании в Дубае?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse6">
+                            <div class="w-100">Можно ли открыть компанию в 100% иностранном владении?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse7">
+                            <div class="w-100">Что такое mainland компания в Дубае?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse8">
+                            <div class="w-100">Что такое Free zone компания в Дубае?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse9">
+                            <div class="w-100">Что такое Offshore компания в Дубае?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse10">
+                            <div class="w-100">Необходим ли физический офис для компании в Дубае?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse11">
+                            <div class="w-100">Можно ли открыть компанию в 100% иностранном владении?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse11" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse12">
+                            <div class="w-100">Что такое mainland компания в Дубае?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse12" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse13">
+                            <div class="w-100">Что такое Free zone компания в Дубае?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse13" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse14">
+                            <div class="w-100">Что такое Offshore компания в Дубае?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse14" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse15">
+                            <div class="w-100">Необходим ли физический офис для компании в Дубае?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse15" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse16">
+                            <div class="w-100">Можно ли открыть компанию в 100% иностранном владении?</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                                <circle cx="15.705" cy="15.705" r="14.705" stroke="white" stroke-width="2" />
+                                <path
+                                    d="M16.0881 25.2813C15.2915 25.2813 14.6458 24.6355 14.6458 23.8389V7.57128C14.6458 6.77468 15.2915 6.12891 16.0881 6.12891C16.8847 6.12891 17.5305 6.77468 17.5305 7.57128V23.8389C17.5305 24.6355 16.8847 25.2813 16.0881 25.2813ZM7.46144 17.0602C6.72551 17.0602 6.12891 16.4636 6.12891 15.7277C6.12891 14.9917 6.7255 14.3951 7.46144 14.3951H24.7148C25.4508 14.3951 26.0474 14.9917 26.0474 15.7277C26.0474 16.4636 25.4508 17.0602 24.7148 17.0602H7.46144Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="collapse16" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="top-footer">
+            <div class="container">
+                <h2 class="h2-line"><span>Наши контакты</span></h2>
+
+                <div class="row mt-4">
+                    <p>Вы можете связаться с нами любым удобным способом.</p>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-7">
+                        <div>
+                            <p class="m-0">Телефон: +7 (999) 999-99-99</p>
+                            <p class="m-0">E-mail: info@aner.ru</p>
+                            <p class="m-0">Адрес: </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col d-flex justify-content-start justify-content-sm-end align-items-end gap-2 mt-3 mt-sm-0 ">
+                        <img src="img/Vector.png" alt="">
+                        <img src="img/whatsapp-black_100rr119 1.png" alt="">
+                        <img src="img/instagram_black_logo_icon_14712r2 1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="img-container">
+            <img src="img/portret-delovyh-partnerov-privetstvuut-drug-druga-rukopozatie-na-puti-k-ofisu 1 (1).png"
+                alt="" class="background-image">
+        </div>
+
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-3 col-xl-4 d-flex flex-column d-xl-block">
+                        <div class="row mb-4 mb-md-0"><img src="img/logo.png" alt="#"></div>
+                        <div class="row socials d-none d-md-flex">
+                            <a href=""><img src="img/telegram_logo_icon_144811 1.png" alt=""></a>
+                            <a href=""><img src="img/whatsapp-black_100119 1.png" alt=""></a>
+                            <a href=""><img src="img/instagram_black_logo_icon_147122 1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Наши кейсы</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Блог</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="small-li">
+                            <ul>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Открытие компании</a></li>
+                                <li><a href="#">Корпоративный счёт</a></li>
+                                <li><a href="#">Бухгалтерский учёт</a></li>
+                                <li><a href="#">Легализация документов</a></li>
+                                <li><a href="#">Иммиграция</a></li>
+                                <li><a href="#">Релокация</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row socials d-flex d-md-none">
+                        <a href=""><img src="img/telegram_logo_icon_144811 1.png" alt=""></a>
+                        <a href=""><img src="img/whatsapp-black_100119 1.png" alt=""></a>
+                        <a href=""><img src="img/instagram_black_logo_icon_147122 1.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </footer>
+
+
+
+
+    <!-- POPUP AND SIDE BAR -->
+    <!-- SHOULD BE LAST IN BODY  -->
+
+    <div id="popup" class="popup">
+        <div class="popup-content img-container container">
+            <img src="img/footer-hero.png" alt="#" class="background-image">
+            <button id="closePopup">✕</button>
+
+            <h2>Откройте бизнес в Дубае без ошибок</h2>
+            <p class="w-75">
+                Оставьте контактные данные, мы свяжемся с вами в ближайшее время
+                и подберем подходящее предложение
+            </p>
+
+            <div class="row">
+                <div class="col-12 col-md-7 col-xl-5">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control rounded-pill border-0 py-3 px-4"
+                                placeholder="Ваше Имя">
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="tel" class="form-control rounded-pill border-0 py-3 px-4"
+                                placeholder="Телефон">
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="email" class="form-control rounded-pill border-0 py-3 px-4"
+                                placeholder="E-mail">
+                        </div>
+
+                        <div class="mb-3">
+                            <select class="form-select rounded-pill border-0 py-3 px-4">
+                                <option selected disabled>Выбрать направление</option>
+                                <option value="business">Открытие бизнеса</option>
+                                <option value="visa">Визы и резидентство</option>
+                                <option value="bank">Открытие счета</option>
+                                <option value="real-estate">Недвижимость</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-4">
+                            <textarea class="form-control border-0 py-3 px-4" rows="4" placeholder="Ваш комментарий"
+                                style="border-radius: 20px;"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn round green px-4 mb-3">
+                            Отправить
+                        </button>
+                    </form>
+
+                    <small>
+                        Нажимая на кнопку, Вы даете свое&nbsp;
+                        <a href="https://aner.ae/privacy-policy/">
+                            согласие на обработку ваших персональных данных
+                        </a>
+                    </small>
+
+                </div>
+
+                <div
+                    class="col-12 col-md-5 col-xl-7 d-flex flex-row flex-md-column justify-content-start align-items-center gap-2 gap-md-5">
+                    <div class="d-flex flex-row flex-md-column flex-xl-row gap-2 gap-md-5 socials">
+                        <a href="#">
+                            <svg width="27" height="26" viewBox="0 0 27 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_218_47226)">
+                                    <path
+                                        d="M13.5 0.40625C6.27497 0.40625 0.421875 6.04338 0.421875 13C0.421875 19.9566 6.27581 25.5938 13.5 25.5938C20.725 25.5938 26.5781 19.9566 26.5781 13C26.5781 6.04338 20.7242 0.40625 13.5 0.40625ZM19.9235 9.03419L17.777 18.7744C17.6183 19.4651 17.1914 19.6324 16.5957 19.3074L13.3262 16.9869L11.7492 18.4494C11.5754 18.6168 11.4277 18.759 11.0903 18.759L11.3223 15.5545L17.3813 10.283C17.6453 10.0596 17.323 9.93281 16.9746 10.1562L9.48628 14.6957L6.25894 13.7256C5.55778 13.5127 5.54175 13.0504 6.40659 12.7254L19.0156 8.04294C19.6012 7.83981 20.1125 8.18025 19.9226 9.03337L19.9235 9.03419Z"
+                                        fill="white"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_218_47226">
+                                        <rect width="27" height="26" fill="white"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+
+
+                        </a>
+                        <a href="">
+                            <svg width="27" height="26" viewBox="0 0 27 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_218_47228)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.4961 0C6.05377 0 0 5.83119 0 12.9999C0 15.8429 0.952111 18.4795 2.57063 20.6196L0.888519 25.4496L6.0775 23.8526C8.21171 25.213 10.7586 26 13.5039 26C20.9462 26 27 20.1686 27 13.0001C27 5.83142 20.9462 0.000214895 13.5039 0.000214895L13.4961 0ZM9.72723 6.60336C9.46546 5.99965 9.26707 5.97679 8.8705 5.96126C8.73547 5.95371 8.58499 5.94617 8.41817 5.94617C7.90225 5.94617 7.36282 6.09133 7.03746 6.41227C6.6409 6.80203 5.65696 7.71137 5.65696 9.57623C5.65696 11.4411 7.06926 13.2447 7.25959 13.4971C7.45799 13.749 10.0129 17.6314 13.98 19.2137C17.0822 20.4518 18.0028 20.337 18.7088 20.1919C19.7402 19.9779 21.0336 19.2439 21.3589 18.3577C21.6843 17.4709 21.6843 16.7143 21.5889 16.5538C21.4937 16.3934 21.2317 16.3019 20.8352 16.1106C20.4386 15.9195 18.5104 15.0024 18.1454 14.8801C17.7882 14.7502 17.4472 14.7962 17.1776 15.163C16.7967 15.6751 16.4239 16.1949 16.1223 16.5081C15.8842 16.7527 15.4953 16.7833 15.1701 16.6533C14.7337 16.4777 13.512 16.0646 12.0043 14.7731C10.8379 13.7721 10.0445 12.5264 9.81457 12.152C9.58437 11.77 9.79081 11.5481 9.97308 11.3419C10.1715 11.1048 10.3618 10.9368 10.5602 10.7151C10.7586 10.4936 10.8697 10.3788 10.9967 10.1189C11.1317 9.86677 11.0363 9.60686 10.9411 9.41576C10.8459 9.22466 10.0526 7.35979 9.72723 6.60336Z"
+                                        fill="white"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_218_47228">
+                                        <rect width="27" height="26" fill="white"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </a>
+                        <a href="">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_218_47232)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0 13C0 5.82032 5.82032 0 13 0C20.1797 0 26 5.82032 26 13C26 20.1797 20.1797 26 13 26C5.82032 26 0 20.1797 0 13ZM13.0007 6.06667C11.1177 6.06667 10.8813 6.0749 10.1418 6.10854C9.40366 6.14234 8.89985 6.25923 8.45899 6.43067C8.00296 6.60774 7.61616 6.84466 7.23076 7.23017C6.8451 7.61556 6.60817 8.00237 6.4305 8.45823C6.25863 8.89926 6.14163 9.40323 6.10843 10.141C6.07533 10.8806 6.06667 11.1171 6.06667 13.0001C6.06667 14.883 6.07506 15.1187 6.10854 15.8582C6.1425 16.5963 6.25934 17.1001 6.43067 17.541C6.6079 17.997 6.84477 18.3838 7.23033 18.7692C7.61556 19.1549 8.00237 19.3924 8.45813 19.5695C8.89926 19.7409 9.40323 19.8578 10.1412 19.8916C10.8808 19.9253 11.117 19.9335 12.9998 19.9335C14.8829 19.9335 15.1185 19.9253 15.8581 19.8916C16.5962 19.8578 17.1006 19.7409 17.5418 19.5695C17.9976 19.3924 18.3838 19.1549 18.7691 18.7692C19.1547 18.3838 19.3917 17.997 19.5693 17.5412C19.7398 17.1001 19.8568 16.5962 19.8915 15.8584C19.9247 15.1188 19.9333 14.883 19.9333 13.0001C19.9333 11.1171 19.9247 10.8808 19.8915 10.1412C19.8568 9.40306 19.7398 8.89926 19.5693 8.4584C19.3917 8.00237 19.1547 7.61556 18.7691 7.23017C18.3834 6.8445 17.9977 6.60763 17.5413 6.43067C17.0993 6.25923 16.5952 6.14234 15.8571 6.10854C15.1175 6.0749 14.8821 6.06667 12.9985 6.06667H13.0007Z"
+                                        fill="white"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.3788 7.31619C12.5634 7.31592 12.7694 7.31619 13.0008 7.31619C14.852 7.31619 15.0714 7.32285 15.8025 7.35605C16.4785 7.38698 16.8454 7.49992 17.0898 7.59482C17.4133 7.72049 17.644 7.87069 17.8865 8.11336C18.1292 8.35602 18.2795 8.58715 18.4054 8.91075C18.5003 9.15482 18.6134 9.52174 18.6442 10.1977C18.6774 10.9286 18.6846 11.1482 18.6846 12.9985C18.6846 14.8489 18.6774 15.0685 18.6442 15.7993C18.6132 16.4753 18.5003 16.8423 18.4054 17.0863C18.2797 17.4099 18.1292 17.6403 17.8865 17.8829C17.6439 18.1255 17.4135 18.2757 17.0898 18.4014C16.8457 18.4967 16.4785 18.6094 15.8025 18.6403C15.0716 18.6735 14.852 18.6807 13.0008 18.6807C11.1495 18.6807 10.93 18.6735 10.1992 18.6403C9.52316 18.6091 9.15623 18.4961 8.91172 18.4012C8.58813 18.2756 8.357 18.1254 8.11434 17.8827C7.87167 17.64 7.72147 17.4095 7.59553 17.0858C7.50063 16.8417 7.38753 16.4748 7.35676 15.7988C7.3235 15.0679 7.31689 14.8483 7.31689 12.9968C7.31689 11.1453 7.3235 10.9269 7.35676 10.196C7.38764 9.52001 7.50063 9.15309 7.59553 8.90869C7.72119 8.58515 7.87167 8.35402 8.11434 8.11135C8.357 7.86869 8.58813 7.71848 8.91172 7.59249C9.15612 7.49716 9.52316 7.38449 10.1992 7.35345C10.8388 7.32458 11.0866 7.31592 12.3788 7.31445V7.31619ZM16.7018 8.46739C16.2425 8.46739 15.8698 8.83968 15.8698 9.29912C15.8698 9.75845 16.2425 10.1311 16.7018 10.1311C17.1611 10.1311 17.5338 9.75845 17.5338 9.29912C17.5338 8.83979 17.1611 8.46739 16.7018 8.46739ZM13.0008 9.43952C11.0345 9.43952 9.44023 11.0338 9.44023 13.0001C9.44023 14.9665 11.0345 16.56 13.0008 16.56C14.9672 16.56 16.5608 14.9665 16.5608 13.0001C16.5608 11.0338 14.9672 9.43952 13.0008 9.43952Z"
+                                        fill="white"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.0006 10.6885C14.2769 10.6885 15.3117 11.7232 15.3117 12.9996C15.3117 14.2759 14.2769 15.3107 13.0006 15.3107C11.7241 15.3107 10.6895 14.2759 10.6895 12.9996C10.6895 11.7232 11.7241 10.6885 13.0006 10.6885Z"
+                                        fill="white"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_218_47232">
+                                        <rect width="26" height="26" fill="white"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+
+
+
+
+                        </a>
+                    </div>
+
+                    <div class="logo">
+                        <img src="img/logo.png" alt="#">
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sidebar" class="sidebar">
+        <div class="container">
+            <div class="sidebar-content">
+
+                <button id="closeSidebar" class="close-btn">×</button>
+
+                <ul>
+                    <li><a href="">Главная</a></li>
+                    <li class="nav-item">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="#" class="nav-link">Услуги</a>
+
+                            <!-- Triangle button ONLY -->
+                            <button class="btn btn-sm text-white" data-bs-toggle="collapse"
+                                data-bs-target="#servicesSubmenu" aria-expanded="false" aria-label="Toggle services">
+                                ▼
+                            </button>
+                        </div>
+
+                        <ul class="collapse list-unstyled" id="servicesSubmenu">
+                            <li><a href="#">Открытие компании</a></li>
+                            <li><a href="#">Корпоративный счёт</a></li>
+                            <li><a href="#">Бухгалтерский учёт</a></li>
+                            <li><a href="#">Легализация документов</a></li>
+                            <li><a href="#">Иммиграция</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="">О компании</a></li>
+                    <li><a href="">Блог</a></li>
+                    <li><a href="">Контакты</a></li>
+                    <li><a class="btn round green openPopup px-5 mb-3 mt-2">Связаться</a></li>
+                </ul>
+                <div class="socials">
+                    <a href="#">
+                        <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_218_47226)">
+                                <path
+                                    d="M13.5 0.40625C6.27497 0.40625 0.421875 6.04338 0.421875 13C0.421875 19.9566 6.27581 25.5938 13.5 25.5938C20.725 25.5938 26.5781 19.9566 26.5781 13C26.5781 6.04338 20.7242 0.40625 13.5 0.40625ZM19.9235 9.03419L17.777 18.7744C17.6183 19.4651 17.1914 19.6324 16.5957 19.3074L13.3262 16.9869L11.7492 18.4494C11.5754 18.6168 11.4277 18.759 11.0903 18.759L11.3223 15.5545L17.3813 10.283C17.6453 10.0596 17.323 9.93281 16.9746 10.1562L9.48628 14.6957L6.25894 13.7256C5.55778 13.5127 5.54175 13.0504 6.40659 12.7254L19.0156 8.04294C19.6012 7.83981 20.1125 8.18025 19.9226 9.03337L19.9235 9.03419Z"
+                                    fill="white"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_218_47226">
+                                    <rect width="27" height="26" fill="white"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+
+
+                    </a>
+                    <a href="">
+                        <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_218_47228)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M13.4961 0C6.05377 0 0 5.83119 0 12.9999C0 15.8429 0.952111 18.4795 2.57063 20.6196L0.888519 25.4496L6.0775 23.8526C8.21171 25.213 10.7586 26 13.5039 26C20.9462 26 27 20.1686 27 13.0001C27 5.83142 20.9462 0.000214895 13.5039 0.000214895L13.4961 0ZM9.72723 6.60336C9.46546 5.99965 9.26707 5.97679 8.8705 5.96126C8.73547 5.95371 8.58499 5.94617 8.41817 5.94617C7.90225 5.94617 7.36282 6.09133 7.03746 6.41227C6.6409 6.80203 5.65696 7.71137 5.65696 9.57623C5.65696 11.4411 7.06926 13.2447 7.25959 13.4971C7.45799 13.749 10.0129 17.6314 13.98 19.2137C17.0822 20.4518 18.0028 20.337 18.7088 20.1919C19.7402 19.9779 21.0336 19.2439 21.3589 18.3577C21.6843 17.4709 21.6843 16.7143 21.5889 16.5538C21.4937 16.3934 21.2317 16.3019 20.8352 16.1106C20.4386 15.9195 18.5104 15.0024 18.1454 14.8801C17.7882 14.7502 17.4472 14.7962 17.1776 15.163C16.7967 15.6751 16.4239 16.1949 16.1223 16.5081C15.8842 16.7527 15.4953 16.7833 15.1701 16.6533C14.7337 16.4777 13.512 16.0646 12.0043 14.7731C10.8379 13.7721 10.0445 12.5264 9.81457 12.152C9.58437 11.77 9.79081 11.5481 9.97308 11.3419C10.1715 11.1048 10.3618 10.9368 10.5602 10.7151C10.7586 10.4936 10.8697 10.3788 10.9967 10.1189C11.1317 9.86677 11.0363 9.60686 10.9411 9.41576C10.8459 9.22466 10.0526 7.35979 9.72723 6.60336Z"
+                                    fill="white"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_218_47228">
+                                    <rect width="27" height="26" fill="white"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                    </a>
+                    <a href="">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_218_47232)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 13C0 5.82032 5.82032 0 13 0C20.1797 0 26 5.82032 26 13C26 20.1797 20.1797 26 13 26C5.82032 26 0 20.1797 0 13ZM13.0007 6.06667C11.1177 6.06667 10.8813 6.0749 10.1418 6.10854C9.40366 6.14234 8.89985 6.25923 8.45899 6.43067C8.00296 6.60774 7.61616 6.84466 7.23076 7.23017C6.8451 7.61556 6.60817 8.00237 6.4305 8.45823C6.25863 8.89926 6.14163 9.40323 6.10843 10.141C6.07533 10.8806 6.06667 11.1171 6.06667 13.0001C6.06667 14.883 6.07506 15.1187 6.10854 15.8582C6.1425 16.5963 6.25934 17.1001 6.43067 17.541C6.6079 17.997 6.84477 18.3838 7.23033 18.7692C7.61556 19.1549 8.00237 19.3924 8.45813 19.5695C8.89926 19.7409 9.40323 19.8578 10.1412 19.8916C10.8808 19.9253 11.117 19.9335 12.9998 19.9335C14.8829 19.9335 15.1185 19.9253 15.8581 19.8916C16.5962 19.8578 17.1006 19.7409 17.5418 19.5695C17.9976 19.3924 18.3838 19.1549 18.7691 18.7692C19.1547 18.3838 19.3917 17.997 19.5693 17.5412C19.7398 17.1001 19.8568 16.5962 19.8915 15.8584C19.9247 15.1188 19.9333 14.883 19.9333 13.0001C19.9333 11.1171 19.9247 10.8808 19.8915 10.1412C19.8568 9.40306 19.7398 8.89926 19.5693 8.4584C19.3917 8.00237 19.1547 7.61556 18.7691 7.23017C18.3834 6.8445 17.9977 6.60763 17.5413 6.43067C17.0993 6.25923 16.5952 6.14234 15.8571 6.10854C15.1175 6.0749 14.8821 6.06667 12.9985 6.06667H13.0007Z"
+                                    fill="white"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.3788 7.31619C12.5634 7.31592 12.7694 7.31619 13.0008 7.31619C14.852 7.31619 15.0714 7.32285 15.8025 7.35605C16.4785 7.38698 16.8454 7.49992 17.0898 7.59482C17.4133 7.72049 17.644 7.87069 17.8865 8.11336C18.1292 8.35602 18.2795 8.58715 18.4054 8.91075C18.5003 9.15482 18.6134 9.52174 18.6442 10.1977C18.6774 10.9286 18.6846 11.1482 18.6846 12.9985C18.6846 14.8489 18.6774 15.0685 18.6442 15.7993C18.6132 16.4753 18.5003 16.8423 18.4054 17.0863C18.2797 17.4099 18.1292 17.6403 17.8865 17.8829C17.6439 18.1255 17.4135 18.2757 17.0898 18.4014C16.8457 18.4967 16.4785 18.6094 15.8025 18.6403C15.0716 18.6735 14.852 18.6807 13.0008 18.6807C11.1495 18.6807 10.93 18.6735 10.1992 18.6403C9.52316 18.6091 9.15623 18.4961 8.91172 18.4012C8.58813 18.2756 8.357 18.1254 8.11434 17.8827C7.87167 17.64 7.72147 17.4095 7.59553 17.0858C7.50063 16.8417 7.38753 16.4748 7.35676 15.7988C7.3235 15.0679 7.31689 14.8483 7.31689 12.9968C7.31689 11.1453 7.3235 10.9269 7.35676 10.196C7.38764 9.52001 7.50063 9.15309 7.59553 8.90869C7.72119 8.58515 7.87167 8.35402 8.11434 8.11135C8.357 7.86869 8.58813 7.71848 8.91172 7.59249C9.15612 7.49716 9.52316 7.38449 10.1992 7.35345C10.8388 7.32458 11.0866 7.31592 12.3788 7.31445V7.31619ZM16.7018 8.46739C16.2425 8.46739 15.8698 8.83968 15.8698 9.29912C15.8698 9.75845 16.2425 10.1311 16.7018 10.1311C17.1611 10.1311 17.5338 9.75845 17.5338 9.29912C17.5338 8.83979 17.1611 8.46739 16.7018 8.46739ZM13.0008 9.43952C11.0345 9.43952 9.44023 11.0338 9.44023 13.0001C9.44023 14.9665 11.0345 16.56 13.0008 16.56C14.9672 16.56 16.5608 14.9665 16.5608 13.0001C16.5608 11.0338 14.9672 9.43952 13.0008 9.43952Z"
+                                    fill="white"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M13.0006 10.6885C14.2769 10.6885 15.3117 11.7232 15.3117 12.9996C15.3117 14.2759 14.2769 15.3107 13.0006 15.3107C11.7241 15.3107 10.6895 14.2759 10.6895 12.9996C10.6895 11.7232 11.7241 10.6885 13.0006 10.6885Z"
+                                    fill="white"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_218_47232">
+                                    <rect width="26" height="26" fill="white"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+
+
+
+
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- END OF POPUP AND SIDE BAR -->
+    <!-- SHOULD BE LAST IN BODY  -->
+
+
+
+    <script src="js/read-more-buttons.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
