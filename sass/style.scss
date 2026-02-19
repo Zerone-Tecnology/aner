@@ -488,6 +488,26 @@ header {
     }
 }
 
+
+
+
+#blog {
+    .card {
+        background-color: $gray;
+        padding: 22px 33px;
+        border-radius: 28px;
+        border: none;
+        height: 100%;
+
+        p {
+            font-weight: bold;
+            padding: 0;
+            margin: 0;
+            margin-top: 10px;
+        }
+    }
+}
+
 #hero {
     position: relative;
     height: 699px;
