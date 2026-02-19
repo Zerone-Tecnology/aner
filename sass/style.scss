@@ -668,12 +668,26 @@ section {
         transition: all 0.5s ease;
     }
 
+
     .service-card:hover img {
         filter: brightness(30%);
         width: 120%;
         height: 120%;
         transition: all 0.5s ease;
 
+    }
+
+
+    .empty {
+        img {
+            filter: none;
+        }
+
+        &:hover img {
+            filter: none;
+            width: 100%;
+            height: 100%;
+        }
     }
 }
 
