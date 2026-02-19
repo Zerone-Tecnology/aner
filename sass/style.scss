@@ -1190,6 +1190,32 @@ section {
 
 
 
+#scrollTop {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 100px;
+    background-color: $gray;
+    border-radius: 50%;
+    height: 100px;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    svg {
+        width: 100%;
+    }
+    // padding: 12px 16px;
+    // font-size: 20px;
+    // border: none;
+    // border-radius: 50%;
+    // cursor: pointer;
+    // background-color: black;
+    // color: white;
+    // display: none;
+    // transition: opacity 0.3s ease;
+}
 
 #popup {
     position: fixed;

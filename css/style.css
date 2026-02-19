@@ -922,6 +922,24 @@ section .btn.dark-blue:hover {
   z-index: -1;
 }
 
+#scrollTop {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 100px;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+  height: 100px;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+#scrollTop svg {
+  width: 100%;
+}
+
 #popup {
   position: fixed;
   inset: 0;
