@@ -514,6 +514,8 @@ header {
     }
 }
 
+
+
 #hero {
     position: relative;
     height: 699px;
@@ -1364,6 +1366,22 @@ section {
 
 @media (max-width: 992px) {
 
+    #blog {
+        .card {
+
+            padding: 20px 20px;
+
+
+            p {
+                font-size: 20px;
+            }
+
+            button {
+                font-size: 16px;
+            }
+        }
+    }
+
 
     .table-comparison {
         thead th {
@@ -1470,6 +1488,29 @@ section {
 }
 
 @media (max-width: 766px) {
+
+
+    // #blog {
+
+    //     .card {
+
+    //         padding: 20px 20px;
+
+    //         span {
+    //             font-size: 16px;
+    //             margin-right: 10px;
+    //         }
+    //         p {
+    //             font-size: 16px;
+    //         }
+
+    //         button {
+    //             font-size: 12px;
+    //             padding: 5px 5px;
+    //         }
+    //     }
+    // }
+
 
     .table-comparison {
         thead th {
@@ -1693,6 +1734,28 @@ section {
 }
 
 @media (max-width: 576px) {
+
+
+    #blog {
+
+        .card {
+
+            padding: 20px 20px;
+
+            span {
+                font-size: 16px;
+                margin-right: 10px;
+            }
+            p {
+                font-size: 18px;
+            }
+
+            button {
+                font-size: 12px;
+                // padding: 5px 5px;
+            }
+        }
+    }
 
 
     #popup .popup-content {
